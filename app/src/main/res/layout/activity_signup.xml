@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/signup_photo"
+        android:id="@+id/register_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/register_image"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/newColor1"
+        app:cardUseCompatPadding="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_email"
+            android:layout_below="@id/card_view"
+            android:hint="Email..."
+            android:inputType="textEmailAddress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:drawableStart="@mipmap/email"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="17dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginRight="17dp"
+            android:padding="6dp"
+            android:drawableLeft="@mipmap/email"
+            android:background="@drawable/input"
+            />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/input"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:drawableStart="@mipmap/password"
+            android:drawableLeft="@mipmap/password"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            android:padding="6dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_confirm_password"
+            android:hint="Re-Enter Password..."
+            android:inputType="textPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/input"
+            android:drawableStart="@mipmap/password"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:drawableLeft="@mipmap/password"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_step_button"
+            android:padding="4dp"
+            android:backgroundTint="@color/newColor3"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:text="Next Step"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/already_have_account"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Already have Account??"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="18dp"
+
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

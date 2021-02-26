@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "770928552107",
+    "firebase_url": "https://collegefinalmainproejct-default-rtdb.firebaseio.com",
+    "project_id": "collegefinalmainproejct",
+    "storage_bucket": "collegefinalmainproejct.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770928552107:android:0f6445d8ed80598a072fee",
+        "android_client_info": {
+          "package_name": "com.example.medscanproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770928552107-644hco3i636ilhk20ueijffk834npueq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medscanproject",
+            "certificate_hash": "d98a2a05991b3df78acf00d6058a8749f3ab6a58"
+          }
+        },
+        {
+          "client_id": "770928552107-6240apsqg1o31m3sj2dm18peelpc900s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL8ILD1IFZznOYo62eajCzBSJO0SM4acU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770928552107-6240apsqg1o31m3sj2dm18peelpc900s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770928552107:android:7888670d869b244d072fee",
+        "android_client_info": {
+          "package_name": "com.example.scan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770928552107-6240apsqg1o31m3sj2dm18peelpc900s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL8ILD1IFZznOYo62eajCzBSJO0SM4acU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770928552107-6240apsqg1o31m3sj2dm18peelpc900s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

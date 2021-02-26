@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity"
+    android:background="@mipmap/phonepic">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop= "260dp"
+        ></TextView>
+    <RelativeLayout
+        android:id="@+id/phoneAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Med Scan"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_secondary_variant"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Phone Number"
+                    android:textColor="@color/black"
+                    android:id="@+id/phoneText"
+                    android:textColorHint="@android:color/background_dark"
+                    android:inputType="phone"
+
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/codeText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="25dp"
+        android:hint="write your code..."
+
+        android:inputType="phone"
+        android:singleLine="true"
+        android:layout_below="@+id/phoneAuth"
+        android:drawableLeft="@mipmap/password"
+        android:drawableTint="@color/white"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/continueNextButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/codeText"
+        android:layout_centerHorizontal="true"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:layout_marginTop="6dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

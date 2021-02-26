@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Scan</string>
+    <string-array name="Spinner_items">
+        <item>Brain Specialized</item>
+        <item>Eye Specialized</item>
+    </string-array>
+</resources>
