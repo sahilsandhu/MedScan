@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainScreen">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_medscan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MEDSCAN"
+            android:button="@null"
+            android:gravity="center"
+            android:fontFamily="@font/cagliostro"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/background_selector"/>
+        <RadioButton
+            android:id="@+id/rb_chats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHATS"
+            android:textStyle="bold"
+            android:button="@null"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/cagliostro"
+            android:background="@drawable/background_selector"/>
+        <RadioButton
+            android:id="@+id/rb_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROFILE"
+            android:fontFamily="@font/cagliostro"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/background_selector"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+
+</LinearLayout>
